@@ -1,0 +1,109 @@
+/* styles on whole page */
+body {
+	overflow-x: hidden; 
+    font-family: sans-serif;
+    color: #505962;
+}
+
+/* style to navigation bar make text uppercase and put background color to it */
+.navbar{
+    text-transform: uppercase;
+    background-color: #505962;
+}
+/* resize img height 1 rem = 16px */
+.navbar-brand img{
+    height: 3rem;
+}
+/* put image inside home inner*/
+.home-inner{
+    background-image: url(img/landing.jpg);
+}
+/* style for caption and make its position absolute */
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:40%;
+    z-index: 1;
+}
+/* style for h3 inside caption */
+.caption h3{
+    color:#fff;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+/* style for a which has class btn inside caption */
+.btn{
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: .5rem 1.1rem;
+    font-size:.9rem;
+}
+/* any h3 have class heading */
+h3.heading{
+    text-align: center;
+    font-size:1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+/* style for padding class */
+.padding{
+    padding: 2rem 0;
+}
+/*style for image inside section portfolio */
+img.portfolio {
+    max-width: 100%;
+}
+/* style for make no padding between to cols of bootstrap*/
+.no-padding .col-md-6{
+    padding: 0;
+}
+
+.card{
+    margin:2rem;
+}
+/* style for row inside footer*/
+.footer .row{
+    background-color:  #505962;
+    padding: 1rem 2rem 3rem;
+    color:#fff;
+}
+/* style for img inside footer*/
+.footer img{
+    height: 2rem;
+    margin: 1.5rem 0;
+    
+}
+
+/* iOS Landing Page Fix */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
